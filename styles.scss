@@ -1,0 +1,157 @@
+:root{
+    --sm: 20px;
+    --md: 25px;
+    --lg: 32px;
+
+    --font: rgb(143, 142, 142);
+    --border: rgb(211, 210, 210);
+    --hover: rgb(43, 43, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+header{ 
+    height: 44px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0px 0px 6px 0px var(--font);
+
+    position: fixed;
+    z-index: 1;
+
+    background-color: white;
+    p{
+        font-size: var(--sm);
+
+        color: var(--font);
+        
+        margin-left: 20px;
+
+        cursor: pointer;
+        a{
+            color: var(--font);
+        }
+        a:hover{
+            color: var(--hover);
+        }
+    }
+    p:hover{
+        color: var(--hover);
+    }
+}
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--hover);
+    height: 400px;
+
+    padding-bottom: 20px;
+    div{
+        width: 40%;
+
+        padding: 84px 0 0 40px;
+        h1{
+            font-size: var(--lg);
+        }
+        p{
+            font-size: var(--sm);
+
+            color: var(--font);
+
+            margin-top: 20px;
+        }
+    }
+    span{
+        border-left: 80px solid white;
+        border-bottom: 420px solid transparent;
+
+        position: absolute;
+        left: 57%;
+    }
+    img{
+        width: 43%;
+        height: 105%;
+    }
+}
+.My-projects{
+    border-bottom: 1px solid var(--hover);
+    padding-bottom: 20px;
+    h1{
+        padding: 40px 0 40px 40px;
+    }
+    > div{
+        width: 80%;
+
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        margin: 10px auto;
+        a{
+            color: black;
+        }
+        div:hover{
+            border: 1px solid var(--hover);
+            h3:hover{
+                border-top: 1px solid var(--hover);
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            img{
+                align-self: center;
+            }
+            .moviesAPI {
+                width: 40%;
+            }
+            .ToDoList {
+                width: 80%;
+            }
+            .Store {
+                width: 80%;
+            }
+            h3{
+                width: 100%;
+
+                padding: 8px 0;
+
+                display: flex;
+                justify-content: center;
+
+                border-top: 1px solid var(--border);
+            }
+            p{
+                font-size: var(--sm);
+
+                color: var(--font);
+
+                padding: 0 12px 12px 12px;
+            }
+            p:hover{
+                color: var(--hover);
+            }
+        }
+    }
+}
+.Contact-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 80px 20px;
+}
